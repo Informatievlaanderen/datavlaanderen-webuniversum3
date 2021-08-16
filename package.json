@@ -11,7 +11,9 @@
   "dependencies": {
     "@govflanders/vl-ui-accordion": "^3.12.32",
     "@govflanders/vl-ui-core": "^4.1.32",
+    "@govflanders/vl-ui-vue-components": "^5.0.0",
     "core-js": "^3.15.1",
+    "jsonld": "^5.2.0",
     "node-sass": "^6.0.1",
     "nuxt": "^2.15.7",
     "sass": "^1.37.0",
