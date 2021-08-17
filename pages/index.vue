@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <button class="vl-button">
-      <span class="vl-button__label">Gegevens opslaan</span>
-    </button>
+  <div class="vl-page">
+    <vl-region>
+      <vl-layout>
+        <vl-title>{{ profile.metadata.title.nl }}</vl-title>
+      </vl-layout>
+    </vl-region>
   </div>
 </template>
 
@@ -17,14 +19,14 @@ export default {
     }
   },
   async fetch() {
-    const response = await fetch('./ap-bodem.jsonld')
+    const response = await fetch(`http://localhost:3000/ap-bodem.jsonld`)
     const ld = await response.json()
     const parsed = await parse_ontology_from_json_ld_file_ap(ld)
-    console.log(parsed)
     this.profile = parsed
   },
   fetchOnServer: true
 }
+
 </script>
 
 <style lang="scss">

@@ -22,6 +22,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/vl-ui-vue-components'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -37,5 +38,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    maxChunkSize: 1000000,
+    vendor: ['@govflanders/vl-ui-vue-components'],
   }
 }
