@@ -27,15 +27,17 @@ import {
   VlAlert,
   VlActionGroup,
   VlTitleCta,
-  VlTitleSublink
+  VlTitleSublink,
+  VlDescriptionData,
+  VlDescriptionDataItem
 } from '@govflanders/vl-ui-vue-components';
 
 Vue.component('vl-title', VlTitle);
 Vue.component('vl-title-cta', VlTitleCta);
 Vue.component('vl-title-sublink', VlTitleSublink);
 Vue.component('vl-button', VlButton);
-Vue.component('vl-region', VlLayout);
-Vue.component('vl-layout', VlRegion);
+Vue.component('vl-layout', VlLayout);
+Vue.component('vl-region', VlRegion);
 Vue.component('vl-introduction', VlIntroduction);
 Vue.component('vl-data-table', VlDataTable);
 Vue.component('vl-infotext', VlInfotext);
@@ -53,6 +55,8 @@ Vue.component('vl-drawer', VlDrawer);
 Vue.component('vl-spotlight', VlSpotlight);
 Vue.component('vl-alert', VlAlert);
 Vue.component('vl-action-group', VlActionGroup);
+Vue.component('vl-description-data', VlDescriptionData);
+Vue.component('vl-description-data-item', VlDescriptionDataItem);
 
 Vue.use(VlCore);
 Vue.use(VlUtil);
