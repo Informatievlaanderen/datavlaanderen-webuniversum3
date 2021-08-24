@@ -22,7 +22,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/vl-ui-vue-components'
+    '~/plugins/vl-ui-vue-components',
+    '~/plugins/vl-ui-sidenav.client.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
