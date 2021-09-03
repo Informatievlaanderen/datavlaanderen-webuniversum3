@@ -20,6 +20,8 @@ export default {
   css: [
   ],
 
+  target: 'static',
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/vl-ui-vue-components',
@@ -35,7 +37,13 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxt/content'
   ],
+
+  content: {
+    // Options
+  },
+
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

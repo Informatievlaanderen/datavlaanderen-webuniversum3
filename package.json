@@ -31,6 +31,7 @@
     "@govflanders/vl-ui-toggle": "^3.11.9",
     "@govflanders/vl-ui-util": "^3.11.9",
     "@govflanders/vl-ui-vue-components": "^4.0.10",
+    "@nuxt/content": "^1.14.0",
     "core-js": "^3.15.1",
     "jsonld": "^5.2.0",
     "node-sass": "^4.14.1",
