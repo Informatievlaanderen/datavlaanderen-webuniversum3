@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h3 class="vl-title vl-title--h3" id="entity.name[language]">
-      <a v-bind:href="entity.uri" data-toggle="tooltip" data-content="entity.uri" data-placement="right">{{ entity.name[language] }}</a>
+    <h3 class="vl-title vl-title--h3" v-bind:id="entity.name[language]">
+      <a v-bind:href="entity.uri" data-toggle="tooltip" v-bind:data-content="entity.uri" data-placement="right">{{ entity.name[language] }}</a>
     </h3>
     <div class="vl-region vl-region--no-space-top">
       <dl>
