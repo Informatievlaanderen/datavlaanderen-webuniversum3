@@ -16,7 +16,7 @@
     <div class="head" role="contentinfo" id="respecHeader">
       <dl>
         <dt class="vl-description-data__value">Auteurs</dt>
-        <dd class="vl-description-data__subdata" v-for="contributor in profile.contributors" :key="contributor.last_name">
+        <dd class="vl-description-data__subdata" v-for="contributor in authors" :key="contributor.last_name">
           <span v-if="contributor.role == 'A'" typeof="foaf:Person">
             <span class="p-name fn" property="foaf:lastName">{{ contributor.last_name }}</span>,
             <span class="p-name fn" property="foaf:firstName">{{ contributor.first_name }}</span>
@@ -28,7 +28,7 @@
           </span>
         </dd>
         <dt class="vl-description-data__value">Editors</dt>
-        <dd class="vl-description-data__subdata" v-for="contributor in profile.contributors" :key="contributor.last_name">
+        <dd class="vl-description-data__subdata" v-for="contributor in editors" :key="contributor.last_name">
           <span v-if="contributor.role == 'E'" typeof="foaf:Person">
             <span class="p-name fn" property="foaf:lastName">{{ contributor.last_name }}</span>,
             <span class="p-name fn" property="foaf:firstName">{{ contributor.first_name }}</span>
@@ -40,7 +40,7 @@
           </span>
         </dd>
         <dt class="vl-description-data__value">Medewerkers</dt>
-        <dd class="vl-description-data__subdata" v-for="contributor in profile.contributors" :key="contributor.last_name">
+        <dd class="vl-description-data__subdata" v-for="contributor in contributors" :key="contributor.last_name">
           <span v-if="contributor.role == 'C'" typeof="foaf:Person">
             <span class="p-name fn" property="foaf:lastName">{{ contributor.last_name }}</span>,
             <span class="p-name fn" property="foaf:firstName">{{ contributor.first_name }}</span>
@@ -81,6 +81,17 @@
 </template>
 <script>
 export default {
+  computed: {
+    authors() {
+      return this.profile.contributors.filter(c => c.role === 'A')
+    },
+    editors() {
+      return this.profile.contributors.filter(c => c.role === 'E')
+    },
+    contributors() {
+      return this.profile.contributors.filter(c => c.role === 'C')
+    }
+  },
   props: ['profile']
 }
 </script>
