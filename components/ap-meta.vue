@@ -15,7 +15,7 @@
     </dl>
     <div class="head" role="contentinfo" id="respecHeader">
       <dl>
-        <dt class="vl-description-data__value">Auteurs</dt>
+        <dt v-if="authors.length" class="vl-description-data__value">Auteurs</dt>
         <dd class="vl-description-data__subdata" v-for="contributor in authors" :key="contributor.last_name">
           <span v-if="contributor.role == 'A'" typeof="foaf:Person">
             <span class="p-name fn" property="foaf:lastName">{{ contributor.last_name }}</span>,
@@ -27,7 +27,7 @@
               </span>
           </span>
         </dd>
-        <dt class="vl-description-data__value">Editors</dt>
+        <dt v-if="editors.length" class="vl-description-data__value">Editors</dt>
         <dd class="vl-description-data__subdata" v-for="contributor in editors" :key="contributor.last_name">
           <span v-if="contributor.role == 'E'" typeof="foaf:Person">
             <span class="p-name fn" property="foaf:lastName">{{ contributor.last_name }}</span>,
@@ -39,7 +39,7 @@
               </span>
           </span>
         </dd>
-        <dt class="vl-description-data__value">Medewerkers</dt>
+        <dt v-if="contributors.length" class="vl-description-data__value">Medewerkers</dt>
         <dd class="vl-description-data__subdata" v-for="contributor in contributors" :key="contributor.last_name">
           <span v-if="contributor.role == 'C'" typeof="foaf:Person">
             <span class="p-name fn" property="foaf:lastName">{{ contributor.last_name }}</span>,
@@ -71,7 +71,7 @@
         <dd class="vl-description-data__subdata">
           <a v-bind:href="profile.metadata.standaardregisterurl">{{profile.metadata.standaardregisterurl}}</a>
         </dd>
-        <dt class="vl-description-data__value">Afhankelijkheden</dt>
+        <dt v-if="profile.metadata.dependencies" class="vl-description-data__value">Afhankelijkheden</dt>
         <dd class="vl-description-data__subdata">
           <a v-for="dep in profile.metadata.dependencies" :key="dep.packagelabel" v-bind:href="dep.packageurl">{{ dep.packagelabel }}</a>
         </dd>
