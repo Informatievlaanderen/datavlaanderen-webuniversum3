@@ -1,5 +1,5 @@
 <template>
-  <vl-layout>
+  <div>
     <vl-title>{{ profile.metadata.title.nl }}</vl-title>
     <dl class="vl-descriptionlist">
       <dt class="vl-description-data__value">Status</dt>
@@ -77,7 +77,7 @@
         </dd>
       </dl>
     </div>
-  </vl-layout>
+  </div>
 </template>
 <script>
 export default {

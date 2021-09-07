@@ -5,7 +5,7 @@
 <script>
 
 export default {
-  async asyncData ({ $content, route, params }) {
+  async asyncData ({ $content, route }) {
     const profile = await $content('report', route.fullPath, 'html-nj', { deep: true }).fetch()
 
     return {

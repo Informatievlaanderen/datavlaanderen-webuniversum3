@@ -9,9 +9,8 @@
 <script>
 
 export default {
-  async asyncData ({ $content, route, params }) {
+  async asyncData ({ $content }) {
     const content = await $content('report', { deep: true }).fetch()
-    console.log(content)
 
     return {
       content: content.map(page => {
