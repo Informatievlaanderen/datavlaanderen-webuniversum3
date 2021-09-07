@@ -3,10 +3,11 @@
     <h2 class="vl-title vl-title--h2">Overzicht</h2>
     <div class="vl-grid">
       <div
-        v-if="profile.classes && profile.classes.length > 0"
         class="vl-col--9-12 vl-col--1-1--s typography"
       >
-        <div class="vl-region vl-region--no-space-top">
+        <div 
+          v-if="classes.length"
+          class="vl-region vl-region--no-space-top">
           <p>
             In dit document wordt correct gebruik van de volgende entiteiten
             toegelicht:
@@ -18,7 +19,7 @@
           </p>
         </div>
         <div
-          v-if="profile.datatypes && profile.datatypes.length"
+          v-if="datatypes.length"
           class="vl-region vl-region--no-space-top"
         >
           <p>
@@ -65,5 +66,17 @@
 <script>
 export default {
   props: ["profile", "language"],
-};
+  computed: {
+    classes() {
+      return this.profile.classes.sort(function(a, b) {
+        return (a[`sort_${this.language}`] < b[`sort_${this.language}`]) ? -1 : (a[`sort_${this.language}`] > b[`sort_${this.language}`]) ? 1 : 0;
+      }.bind(this))
+    },
+    datatypes() {
+      return this.profile.datatypes.sort(function(a, b) {
+        return (a[`sort_${this.language}`] < b[`sort_${this.language}`]) ? -1 : (a[`sort_${this.language}`] > b[`sort_${this.language}`]) ? 1 : 0;
+      }.bind(this))
+    }
+  }
+}
 </script>
