@@ -12,7 +12,7 @@
             In dit document wordt correct gebruik van de volgende entiteiten
             toegelicht:
             <br />
-            <span v-for="c in profile.classes" :key="c.name[language]">
+            <span v-for="c in classes" :key="c.name[language]">
               <a v-bind:href="'#' + c.name[language]">{{ c.name[language] }}</a>
               |
             </span>
@@ -26,7 +26,7 @@
             In dit document worden de volgende datatypes toegelicht:
             <br />
             <span
-              v-for="datatype in profile.datatypes"
+              v-for="datatype in datatypes"
               :key="datatype.name[language]"
             >
               <a v-bind:href="'#' + datatype.name[language]">{{
