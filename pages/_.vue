@@ -5,13 +5,15 @@
 
 <script>
 export default {
-  async asyncData ({ $content, route }) {
-    const profile = await $content('report', route.fullPath, 'html-nj', { deep: true }).fetch()
-    console.log(route.path.includes('applicatieprofiel'))
+  async asyncData ({ $content, route, app, i18n }) {
+
+    const unPrefixed = i18n.defaultLocale === app.i18n.locale ? route.fullPath : route.fullPath.slice(3)
+
+    const profile = await $content('report', unPrefixed, 'html-nj', { deep: true }).fetch()
 
     return {
       profile,
-      language: "nl",
+      language: app.i18n.locale,
       ap: route.path.includes('applicatieprofiel'),
       voc: route.path.includes('vocabularium')
     };

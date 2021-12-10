@@ -1,0 +1,128 @@
+[
+  {
+    "Project": "OSLO Loongegevens",
+    "Active": "Yes",
+    "Type": "Traject",
+    "Workshop": 1,
+    "Date": "26/10/2021"
+  },
+  {
+    "Project": "OSLO Loongegevens",
+    "Active": "Yes",
+    "Type": "Traject",
+    "Workshop": 2,
+    "Date": "23/11/2021"
+  },
+  {
+    "Project": "OSLO Loongegevens",
+    "Active": "Yes",
+    "Type": "Traject",
+    "Workshop": 3,
+    "Date": "21/12/2021"
+  },
+  {
+    "Project": "OSLO Waterkwaliteit",
+    "Active": "Yes",
+    "Type": "Traject",
+    "Workshop": 1,
+    "Date": "9/11/2021"
+  },
+  {
+    "Project": "OSLO Waterkwaliteit",
+    "Active": "Yes",
+    "Type": "Traject",
+    "Workshop": 2,
+    "Date": "9/12/2021"
+  },
+  {
+    "Project": "OSLO Waterkwaliteit",
+    "Active": "Yes",
+    "Type": "Traject",
+    "Workshop": 3,
+    "Date": "18/01/2021"
+  },
+  {
+    "Project": "OSLO Trapeze",
+    "Active": "Yes",
+    "Type": "Traject",
+    "Workshop": 1,
+    "Date": "21/10/2021"
+  },
+  {
+    "Project": "OSLO Trapeze",
+    "Active": "Yes",
+    "Type": "Traject",
+    "Workshop": 2,
+    "Date": "18/11/2021"
+  },
+  {
+    "Project": "OSLO Trapeze",
+    "Active": "Yes",
+    "Type": "Traject",
+    "Workshop": 3,
+    "Date": "16/12/2021"
+  },
+  {
+    "Project": "OSLO Hoppinpunten",
+    "Active": "Yes",
+    "Type": "Traject",
+    "Workshop": 1,
+    "Date": "26/10/2021"
+  },
+  {
+    "Project": "OSLO Hoppinpunten",
+    "Active": "Yes",
+    "Type": "Traject",
+    "Workshop": 2,
+    "Date": "23/11/2021"
+  },
+  {
+    "Project": "OSLO Hoppinpunten",
+    "Active": "Yes",
+    "Type": "Traject",
+    "Workshop": 3,
+    "Date": "21/12/2021"
+  },
+  {
+    "Project": "OSLO Hoppinpunten",
+    "Active": "Yes",
+    "Type": "Traject",
+    "Workshop": 4,
+    "Date": "18/01/2022"
+  },
+  {
+    "Project": "OSLO Hoppinpunten",
+    "Active": "Yes",
+    "Type": "Traject",
+    "Workshop": 5,
+    "Date": "15/02/2022"
+  },
+  {
+    "Project": "OSLO Opleiding: Sessie 1 - Introductie",
+    "Active": "Yes",
+    "Type": "Opleiding",
+    "Workshop": "-",
+    "Date": "17/11/2021"
+  },
+  {
+    "Project": "OSLO Opleiding: Sessie 2 - Technische inleiding",
+    "Active": "Yes",
+    "Type": "Opleiding",
+    "Workshop": "-",
+    "Date": "18/11/2021"
+  },
+  {
+    "Project": "OSLO Opleiding: Sessie 3 - Hoe breng ik OSLO in mijn organisatie?",
+    "Active": "Yes",
+    "Type": "Opleiding",
+    "Workshop": "-",
+    "Date": "19/11/2021"
+  },
+  {
+    "Project": "OSLO Inspiration sessions",
+    "Active": "Yes",
+    "Type": "Opleiding",
+    "Workshop": "",
+    "Date": "13/12/2021"
+  }
+]

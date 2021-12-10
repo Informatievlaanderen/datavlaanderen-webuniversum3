@@ -60,8 +60,28 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/i18n',
   ],
+
+  i18n: {
+    locales: ['nl', 'fr', 'en'],
+    defaultLocale: 'nl',
+    vueI18n: {
+      fallbackLocale: 'nl',
+      messages: {
+        nl: {
+          welcome: 'Welkom'
+        },
+        fr: {
+          welcome: 'Bienvenue'
+        },
+        en: {
+          welcome: 'Welcome'
+        }
+      }
+    }
+  },
 
   content: {
     // Options
