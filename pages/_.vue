@@ -9,7 +9,7 @@ export default {
 
     const unPrefixed = i18n.defaultLocale === app.i18n.locale ? route.fullPath : route.fullPath.slice(3)
 
-    const profile = await $content('report', unPrefixed, 'html-nj', { deep: true }).fetch()
+    const profile = await $content('report', unPrefixed, 'html-nj_nl', { deep: true }).fetch()
 
     return {
       profile,

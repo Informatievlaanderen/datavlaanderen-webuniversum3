@@ -16,8 +16,8 @@ export default {
       content: content.map(page => {
         return ({
         ...page,
-        path: page.path.slice(8, -8)
-      })})      
+        path: page.path.slice(8, -11)
+      })})
     }
   }
 }
