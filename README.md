@@ -1,5 +1,13 @@
 # datavlaanderen
 
+# Content directory
+
+Onder de content directory wordt een structuur verwacht als volgt: 
+
+```content/report/doc```
+
+Deze komt overeen met de folder structuur als de gegenereerde files in de [OSLO-Generated](https://github.com/Informatievlaanderen/OSLO-Generated) repository
+
 ## Build Setup
 
 ```bash
