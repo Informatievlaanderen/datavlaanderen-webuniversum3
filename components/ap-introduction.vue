@@ -4,7 +4,7 @@
       <p>
         Dit document beschrijft een
         <strong>applicatieprofiel</strong>, in dit geval
-        <strong>{{ profile.metadata.title[language] }}</strong
+        <strong>{{ profile.metadata.title }}</strong
         >. Dit applicatieprofiel beantwoordt de vraag over hoe het
         corresponderende domeinmodel in de praktijk kan toegepast worden.
         Daarbij worden de beperkingen (kardinaliteit, codelijsten) toegelicht en

@@ -12,8 +12,8 @@
             In dit document wordt correct gebruik van de volgende entiteiten
             toegelicht:
             <br />
-            <span v-for="c in classes" :key="c.name[language]">
-              <a v-bind:href="'#' + c.name[language]">{{ c.name[language] }}</a>
+            <span v-for="c in classes" :key="c.name">
+              <a v-bind:href="'#' + c.name">{{ c.name }}</a>
               |
             </span>
           </p>
@@ -27,10 +27,10 @@
             <br />
             <span
               v-for="datatype in datatypes"
-              :key="datatype.name[language]"
+              :key="datatype.name"
             >
-              <a v-bind:href="'#' + datatype.name[language]">{{
-                datatype.name[language]
+              <a v-bind:href="'#' + datatype.name">{{
+                datatype.name
               }}</a>
               |
             </span>
@@ -43,7 +43,7 @@
     </div>
     <div
       v-for="entity in profile.classes"
-      :key="entity.name[language]"
+      :key="entity.name"
       class="vl-region vl-region--no-space-top"
     >
       <datatype :entity="entity" :language="language"></datatype>
@@ -56,7 +56,7 @@
     </div>
     <div
       v-for="entity in profile.datatypes"
-      :key="entity.name[language]"
+      :key="entity.name"
       class="vl-region vl-region--no-space-top"
     >
       <datatype :entity="entity" :language="language"></datatype>
@@ -73,6 +73,7 @@ export default {
       }.bind(this))
     },
     datatypes() {
+      console.log(this.profile)
       return this.profile.datatypes.sort(function(a, b) {
         return (a[`sort_${this.language}`] < b[`sort_${this.language}`]) ? -1 : (a[`sort_${this.language}`] > b[`sort_${this.language}`]) ? 1 : 0;
       }.bind(this))

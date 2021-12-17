@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vl-title>{{ profile.metadata.title.nl }}</vl-title>
+    <vl-title>{{ profile.metadata.title }}</vl-title>
     <dl class="vl-descriptionlist">
       <dt class="vl-description-data__value">Status</dt>
       <dd class="vl-description-data__subdata"><a v-bind:href="profile.metadata.status">{{ profile.metadata.status }}</a></dd>
