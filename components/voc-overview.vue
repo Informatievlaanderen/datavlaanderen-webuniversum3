@@ -24,18 +24,18 @@
             >
           </p>
           <h3 class="vl-title--h3">Klassen</h3>
-          <span v-for="c in profile.classes" :key="c.name[language]">
-            <a v-bind:href="'#' + c.name[language]">{{ c.name[language] }}</a> |
+          <span v-for="c in profile.classes" :key="c.name">
+            <a v-bind:href="'#' + c.name">{{ c.name }}</a> |
           </span>
         </div>
         <div v-if="properties.length" class="vl-region vl-region--no-space-top">
           <h3 class="vl-title--h3">Eigenschappen</h3>
           <span
             v-for="datatype in profile.properties"
-            :key="datatype.name[language]"
+            :key="datatype.name"
           >
-            <a v-bind:href="'#' + datatype.name[language]">{{
-              datatype.name[language]
+            <a v-bind:href="'#' + datatype.name">{{
+              datatype.name
             }}</a>
             |
           </span>
@@ -131,11 +131,11 @@
               <!-- {% for class in classes | sort(attribute = sortattr) %} -->
               <div
                 v-for="property in properties"
-                :key="property.name[language]"
+                :key="property.name"
                 class="vl-region vl-region--no-space-top"
               >
                 <h3 class="vl-title--h3" id="klass.uri">
-                  Eigenschap <em>{{ property.name[language] }}</em>
+                  Eigenschap <em>{{ property.name }}</em>
                 </h3>
                 <table class="vl-definition">
                   <tbody>
