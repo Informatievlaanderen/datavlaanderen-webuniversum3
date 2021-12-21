@@ -13,7 +13,7 @@ export default {
     const content = await $content('report', { deep: true }).fetch()
 
     return {
-      content: content.map(page => {
+      content: content.filter(page => !page.path.includes('translation')).map(page => {
         return ({
         ...page,
         path: page.path.slice(8, -11)
