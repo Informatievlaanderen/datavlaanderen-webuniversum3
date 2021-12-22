@@ -90,7 +90,7 @@
                   data-content="prop.uri"
                   data-placement="right"
                 >
-                  {{ prop.name[language] }}</a
+                  {{ prop.name }}</a
                 >
               </code>
             </td>

@@ -1,32 +1,16 @@
-FROM node:15.13 as builder
+FROM node:14
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-COPY . .
+COPY . ./
+RUN npm install
 
-RUN yarn install \
-  --prefer-offline \
-  --frozen-lockfile \
-  --non-interactive \
-  --production=false
+EXPOSE 8080
 
-RUN yarn build
+ENV HOST=0.0.0.0
+ENV PORT=8080
 
-RUN rm -rf node_modules && \
-  NODE_ENV=production yarn install \
-  --prefer-offline \
-  --pure-lockfile \
-  --non-interactive \
-  --production=true
+RUN npm run build
 
-FROM node:15.13
-
-WORKDIR /app
-
-COPY --from=builder /app  .
-
-ENV HOST 0.0.0.0
-EXPOSE 80
-
-CMD [ "yarn", "start" ]
+CMD [ "npm", "run", "start" ]
 
