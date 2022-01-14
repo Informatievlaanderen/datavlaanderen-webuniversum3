@@ -46,7 +46,6 @@ workflows:
   publish-updated-content:
     jobs:
       - build:
-          npm_token: ${NPM_TOKEN}
       - upload:
           name: upload-test
           requires:
