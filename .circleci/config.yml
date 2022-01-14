@@ -46,6 +46,7 @@ workflows:
   publish-updated-content:
     jobs:
       - build:
+          name: build
       - upload:
           name: upload-test
           requires:
