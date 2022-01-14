@@ -45,12 +45,12 @@ workflows:
   version: 2
   publish-updated-content:
     jobs:
-      - dist-build:
+      - build:
           npm_token: ${NPM_TOKEN}
       - upload:
           name: upload-test
           requires:
-            - dist-build
+            - build
           sas_token: ${SAS_TOKEN_TEST}
           url: https://swarmstoraccount.blob.core.windows.net/oslo-webuniversum3/dist.tar
       - hold:
