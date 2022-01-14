@@ -13,7 +13,4 @@ RUN NODE_ENV=production yarn install \
   --non-interactive \
   --production=true
 
-
-RUN yarn build
-
 RUN yarn generate
