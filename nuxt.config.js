@@ -92,5 +92,38 @@ export default {
   build: {
     maxChunkSize: 1000000,
     vendor: ['@govflanders/vl-ui-vue-components'],
+  },
+
+  generate: {
+    crawler: false,
+    routes: [
+      "doc/applicatieprofiel/documentatie/associaties-met-carets",
+      "doc/applicatieprofiel/documentatie/rollen",
+      "doc/vocabularium/documentatie/assocafdalen",
+      "doc/vocabularium/documentatie/associaties-voc-met-afdaal-tags",
+      "doc/vocabularium/documentatie/associaties-voc-met-carets",
+      "doc/vocabularium/documentatie/associaties-voc-met-packages3",
+      "doc/applicatieprofiel/documentatie/associaties-met-afdaal-tags",
+      "doc/vocabularium/documentatie/associaties-voc-met-packages2",
+      "doc/vocabularium/documentatie/associaties-voc-met-uri-tags2",
+      "doc/applicatieprofiel/documentatie/assocafdalen",
+      "doc/vocabularium/documentatie/associaties-voc-met-ap-label-tags",
+      "doc/vocabularium/documentatie/associaties-voc-met-name-tags2",
+      "doc/vocabularium/documentatie/associaties-voc-met-hoofdletters",
+      "doc/vocabularium/documentatie/associaties-voc-met-name-tags",
+      "doc/vocabularium/documentatie/associaties-voc",
+      "doc/vocabularium/documentatie/associaties-voc-met-packages",
+      "doc/vocabularium/documentatie/associaties-voc-met-uri-tags",
+      "doc/applicatieprofiel/documentatie/associaties-met-packages3",
+      "doc/applicatieprofiel/documentatie/associaties-met-ap-label-tags",
+      "doc/applicatieprofiel/documentatie/associaties-met-hoofdletters",
+      "doc/applicatieprofiel/documentatie/associaties-met-packages2",
+      "doc/applicatieprofiel/documentatie/associaties-met-name-tags",
+      "doc/applicatieprofiel/documentatie/associaties-met-uri-tags2",
+      "doc/applicatieprofiel/documentatie/associaties-met-name-tags2",
+      "doc/applicatieprofiel/documentatie/associaties-met-packages",
+      "doc/applicatieprofiel/documentatie/associaties-met-uri-tags",
+      "doc/applicatieprofiel/documentatie/associaties"
+    ]
   }
 }
