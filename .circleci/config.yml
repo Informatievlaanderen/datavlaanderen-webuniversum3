@@ -19,5 +19,5 @@ jobs:
           paths:
             - ./node_modules
       - run:
-	  name: build-project
-	  command: npm run generate
+          name: build-project
+          command: npm run generate
