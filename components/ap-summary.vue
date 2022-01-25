@@ -12,7 +12,7 @@
     >
       Samenvatting
     </h2>
-    {{ profile.metadata.description[language] }}
+    {{ profile.metadata.description }}
   </div>
 </template>
 <script>

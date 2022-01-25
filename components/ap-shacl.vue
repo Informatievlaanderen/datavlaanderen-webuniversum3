@@ -13,9 +13,9 @@
       Een herbruikbare SHACL template definitie voor dit applicatieprofiel is
       terug te vinden op:
       <a
-        v-bind:href="`#documentroot/shacl/${profile.metadata.filename}-SHACL.ttl`"
+        v-bind:href="`doc/applicatieprofiel/documentatie/shacl/${profile.metadata.filename}-SHACL.ttl`"
         target="_blank"
-        >#documentroot/shacl/{{ profile.metadata.filename }}-SHACL.ttl</a
+        >doc/applicatieprofiel/documentatie/shacl/{{ profile.metadata.filename }}-SHACL.ttl</a
       >
     </p>
   </div>

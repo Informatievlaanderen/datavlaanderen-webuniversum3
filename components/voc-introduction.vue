@@ -3,7 +3,7 @@
     <div class="vl-introduction vl-typography">
       <p>
         Dit document beschrijft een <strong>vocabularium</strong>, in dit geval
-        <strong>{{ profile.metadata.title[language] }}</strong
+        <strong>{{ profile.metadata.title }}</strong
         >. Een vocabularium is een verzameling van herbruikbare termen, namelijk
         klassen en eigenschappen, waarvan hun betekenis is vastgelegd door
         middel van een label en definitie. Voor termen gedefinieerd in dit

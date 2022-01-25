@@ -15,7 +15,7 @@
         data-toggle="tooltip"
         v-bind:data-content="entity.uri"
         data-placement="right"
-        >{{ entity.name[language] }}</a
+        >{{ entity.name }}</a
       >
     </h3>
     <div class="vl-region vl-region--no-space-top">
@@ -40,10 +40,10 @@
           v-if="entity.properties.length"
         >
           Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-          <span v-for="prop in entity['properties']" :key="prop.name[language]">
+          <span v-for="prop in entity['properties']" :key="prop.name">
             <a
-              v-bind:href="'#' + entity.name[language] + prop.name[language]"
-              >{{ prop.name[language] }}</a
+              v-bind:href="'#' + entity.name + prop.name"
+              >{{ prop.name }}</a
             >
           </span>
         </dd>
@@ -128,6 +128,6 @@
 </template>
 <script>
 export default {
-  props: ["entity", "language"],
+  props: ["entity", "language"]
 };
 </script>

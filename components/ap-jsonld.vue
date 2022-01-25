@@ -13,9 +13,9 @@
       Een herbruikbare JSON-LD context definitie voor dit applicatieprofiel is
       terug te vinden op:
       <a
-        v-bind:href="`#documentroot#/context/${profile.metadata.filename}.jsonld`"
+        v-bind:href="`doc/applicatieprofiel/documentatie/${profile.metadata.filename}.jsonld`"
         target="_blank"
-        >#documentroot#/context/{{ profile.metadata.filename }}.jsonld</a
+        >doc/applicatieprofiel/documentatie/{{ profile.metadata.filename }}.jsonld</a
       >
     </p>
   </div>

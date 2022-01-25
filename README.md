@@ -8,6 +8,8 @@ Onder de content directory wordt een structuur verwacht als volgt:
 
 Deze komt overeen met de folder structuur als de gegenereerde files in de [OSLO-Generated](https://github.com/Informatievlaanderen/OSLO-Generated) repository
 
+Er wordt tevens een kopie van dezelfde repository in ```/static/``` verwacht voor de images, shacl en jsonld bestanden.
+
 ## Build Setup
 
 ```bash

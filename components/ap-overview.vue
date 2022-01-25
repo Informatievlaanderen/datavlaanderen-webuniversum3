@@ -38,6 +38,12 @@
         </div>
       </div>
     </div>
+    <div class="region region--no-space-top">
+      <!-- tbd: correct path to image -->
+      <a v-bind:href="`${profile.metadata.filename}/html/overview.jpg`" target="_blank">
+        <img v-bind:href="`${profile.metadata.filename}/html/overview.jpg`" />
+      </a>
+    </div>
     <div class="vl-region vl-region--no-space-top">
       <h2 class="vl-title vl-title--h2">Entiteiten</h2>
     </div>
@@ -73,7 +79,7 @@ export default {
       }.bind(this))
     },
     datatypes() {
-      console.log(this.profile)
+      console.log(this.profile.metadata)
       return this.profile.datatypes.sort(function(a, b) {
         return (a[`sort_${this.language}`] < b[`sort_${this.language}`]) ? -1 : (a[`sort_${this.language}`] > b[`sort_${this.language}`]) ? 1 : 0;
       }.bind(this))

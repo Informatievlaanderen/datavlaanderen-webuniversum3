@@ -90,5 +90,6 @@ sw.*
 # Vim swap files
 *.swp
 
+static/doc
 content
 .npmrc
