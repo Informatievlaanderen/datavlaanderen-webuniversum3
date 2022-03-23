@@ -48,7 +48,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/vl-ui-vue-components',
-    '~/plugins/vl-ui-sidenav.client.js'
+    '~/plugins/vl-ui-sidenav.client.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -92,6 +92,7 @@ export default {
   build: {
     maxChunkSize: 1000000,
     vendor: ['@govflanders/vl-ui-vue-components'],
+    standalone: true,
   },
 
   generate: {
@@ -123,7 +124,9 @@ export default {
       "doc/applicatieprofiel/documentatie/associaties-met-name-tags2",
       "doc/applicatieprofiel/documentatie/associaties-met-packages",
       "doc/applicatieprofiel/documentatie/associaties-met-uri-tags",
-      "doc/applicatieprofiel/documentatie/associaties"
+      "doc/applicatieprofiel/documentatie/associaties",
+      "doc/applicatieprofiel/begroeid-voorkomen/webuniversum3",
+      "doc/applicatieprofiel/begroeid-voorkomen/erkendestandaard/2021-09-30",
     ]
   }
 }

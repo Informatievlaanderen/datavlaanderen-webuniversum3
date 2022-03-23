@@ -79,7 +79,6 @@ export default {
       }.bind(this))
     },
     datatypes() {
-      console.log(this.profile.metadata)
       return this.profile.datatypes.sort(function(a, b) {
         return (a[`sort_${this.language}`] < b[`sort_${this.language}`]) ? -1 : (a[`sort_${this.language}`] > b[`sort_${this.language}`]) ? 1 : 0;
       }.bind(this))

@@ -77,8 +77,8 @@
         <tbody class="supertype">
           <tr
             v-for="prop in entity['properties']"
-            :key="entity.name[language] + ':' + prop.name[language]"
-            id="entity.name[language] + ':' + prop.name[language]"
+            :key="entity.name + ':' + prop.name"
+            id="entity.name + ':' + prop.name"
             typeof="rdfs:Property"
             resource="prop.uri"
           >

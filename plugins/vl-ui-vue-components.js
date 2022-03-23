@@ -29,7 +29,7 @@ import {
   VlTitleCta,
   VlTitleSublink,
   VlDescriptionData,
-  VlDescriptionDataItem
+  VlDescriptionDataItem,
 } from '@govflanders/vl-ui-vue-components';
 
 Vue.component('vl-title', VlTitle);
